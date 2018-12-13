@@ -1,0 +1,158 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="css/style.css">
+      <title>
+        LondonBee
+      </title>
+    </head>
+
+
+<body bgcolor="Beige">
+
+  <header>
+    <center> <b>
+      LondonBee
+    </center></b>
+  </header>
+  <nav>
+<div class="menu-wrapper">
+    <img class="icon" href="default.asp" src="images/logo.jpg", height="42", weight="46" >
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Places.html">Events</a></li>
+    <li><a href="Contact.html">Contact Us</a></li>
+</div>
+</nav>
+<br><br><br>
+
+<!-- Slideshow container -->
+<div class="slideshow">
+
+  <div class="mySlides">
+    <div class="numbertext"> 1 / 5 </div>
+    <div class="text"> New Year Eve The Bollywood Ball 2018</div>
+    <a href="https://www.eventbrite.co.uk/e/new-years-eve-bollywood-ball-tickets-53389191509?aff=ebdssbdestsearch">
+    <img src="images/Bolly.jpg" style="width:100%"; height="350px"> </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 2 / 5 </div>
+    <div class="text"> Foreverland </div>
+    <a href="https://www.eventbrite.com/e/nye-enchanted-forest-rave-in-london-tickets-44872385513?aff=ebdssbdestsearch">
+    <img src="images/Foreverland.jpg" style="width:100%"; height="350px"> </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 3 / 5 </div>
+    <div class="text"> Chinese row year</div>
+    <a href="https://www.eventbrite.com/e/elrow-london-chinese-row-year-final-date-tickets-51249754395?aff=ebdshpmoodssection">
+    <img src="images/Chinese.jpg" style="width:100%"; height="350px"> </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 4 / 5 </div>
+    <div class="text"> London's Biggest New Year's Eve Party -</div>
+    <a href="https://www.eventbrite.com/e/londons-biggest-new-years-eve-party-the-carnival-of-light-featuring-jaguar-skills-tickets-47815478383?aff=ebdssbdestsearch">
+    <img src="images/Newyear.jpg" style="width:100%"; height="350px"> </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 5 / 5 </div>
+    <div class="text">Brother Strut LIVE in London</div>
+    <a href="https://www.eventbrite.com/e/brother-strut-live-in-london-tickets-52938143412?aff=ebdssbdestsearch">
+    <img src="images/Strut.jpg" style="width:100%"; height="350px"> </a>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!--JAVA SCRIPT-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- END JAVA SCRIPT-->
+
+<div class="intro">
+   Looking for things to do once Christmas Day is out of the way? Wondering what's open between then and New Year?
+   Just want to get out of the house and away from the Monopoly/cheese board?
+   Take a look at these things happening in London during Twixtmas — from Boxing Day to New Year.
+</div>
+
+<h2> All week </h2>
+<img class="center" src="images/leicester-square-christmas.jpg" style="width:50%"; height="400px">
+<p>ICE SKATING: Get out in the fresh air and take to the ice on London's winter pop-up skating rinks.
+   From Royal Parks to Oxford Street rooftops and museum gardens, they're appearing all over the place.
+   Most of them have bars and cafes on site, if turkey stocks are running low at home.
+</p>
+<p>WEEKEND WALKS: This week is practically one long weekend anyway, so grab your walking boots and head out on one of our weekend walk routes.
+  See a part of London you haven't visited before, and best of all, it's free — unless you stop in a pub for a pint or two...
+</p>
+<p>PRINCE CHARLES CINEMA: From 2018 releases to old classics, Leicester Square favourite Prince Charles Cinema screens a wealth of films between Christmas and New Year —
+  think Isle of Dogs, Die Hard, West Side Story, The Jungle Book, and a Lord of the Rings overnighter.
+</p>
+<p>HORSE DRAWN CARRIAGES: Experience Richmond Park from the luxury of a horse-drawn carriage.
+  Take a 60 minute ride through the park and then get a behind the scenes tour of the working stables.
+  £125 for two, book ahead, 26-30 December 2018
+</p>
+<img class="center" src="images/45-minute-ride.jpg" style="width:50%"; height="400px">
+<p>CHRISTMAS AT LONDON ZOO: For the first time, London Zoo is having a winter lights festival, winding through the zoo after the animals have gone to bed and featuring light sculptures depicting some of the creatures.
+  Until 1 January 2019
+</p>
+<p>CIRCUS 1903: Acrobats, contortionists, jugglers, high wire walkers and trapeze artists all feature in this circus show, fresh from the Paris Theatre in Las Vegas and making its European debut at Southbank Centre.
+   £25-£99.50, book ahead, until 5 January 2019
+</p>
+<p>CHRISTMAS IN LEICESTER SQUARE: An all-male burlesque group, and a kids' carnival are among the shows taking place in the 1920s speigeltent at Christmas in Leicester Square this week.
+  The wooden cabins and food and drink stalls are still open in the rest of the square too. Until 6 January 2019
+</p>
+<p>WINTER WONDERLAND: The Hyde Park behemoth is open until the new year, and in the past we've found that's a bit less crowded after Christmas.
+   As well as the funfair rides, this year's event hosts a special cinema, ice kingdom, circus and more. Until 6 January 2019
+</p>
+
+<h2> Things to to on Boxing Day: 26 December 2018</h2>
+<img class="center" src="images/sample-sales.jpg" style="width:50%"; height="400px">
+<p>SHOP TILL YOU FALL: Plan your shopping trip and think tactically.
+  You might choose to target a particular shopping destination, such as the West End, Covent Garden or Westfield.
+  Now is the ideal time to invest in some designer threads. Splash out at some luxury shopping destinations, such as trendy King's Road boutiques or the luxury labels of Bond Street. Find plenty of bargains on Oxford Street and Regent Street, and in areas like Seven Dials and Carnaby.
+  Alternatively, stock up on cheap gadgets: Tottenham Court Road is a great place for computers and electronics.
+</p>
+<p>LEARN TO BALLROOM: Put your dancing shoes on and take part in a free ballroom dancing session, where you'll learn the basic steps.
+  Free, just turn up, 3pm. The lesson is followed by a social dancing session, which dancers of all levels are welcome to attend. Free, just turn up, 4pm
+</p>
+
+  </body>
+</html>

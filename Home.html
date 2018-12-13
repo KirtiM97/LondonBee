@@ -1,0 +1,188 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="css/style.css">
+      <title>
+        LondonBee
+      </title>
+    </head>
+
+
+<body bgcolor="Beige">
+
+  <header>
+    <center> <b>
+      LondonBee
+    </center></b>
+  </header>
+
+  <nav>
+    <div class="menu-wrapper">
+      <ul>
+        <img class="icon" href="default.asp" src="images/logo.jpg", height="42", weight="46" >
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Places.html">Events</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<br><br><br>
+<!-- Slideshow container -->
+<div class="slideshow">
+
+  <div class="mySlides">
+    <div class="numbertext"> 1 / 4 </div>
+    <img src="images/Skyline.jpg" style="width:100%"; height="350px">
+    <div class="text"> The Beautiful London Skyline</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 2 / 4 </div>
+    <img src="images/Bridge.jpg" style="width:100%"; height="350px">
+    <div class="text"> Visit the Tower Bridge</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 3 / 4 </div>
+    <img src="images/Museum.jpg" style="width:100%"; height="350px">
+    <div class="text"> Have a thirst for Knowledge? Visit the National History Museum!</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 4 / 4 </div>
+    <img src="images/Shopping.jpg" style="width:100%"; height="350px">
+    <div class="text"> Love Brands? Shop on Oxford Street!</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!--JAVA SCRIPT-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- END JAVA SCRIPT-->
+
+
+<div class="intro">
+   Are you planning to visit London soon? Find free or cheap things to do on your London trip; fun and cool things to do; things to do this weekend; things to do with kids; unusual or romantic things to do in London. There are plenty of London breaks to choose from, whether you are coming for a day trip or for a whole weekend in London. Plan ahead for your trip to London: search for upcoming events, museum and galleries, sightseeing tours, theatre shows, bars, restaurants, nightlife, days out and even day trips from London. Visiting London has never been easier with these ideas for London breaks.
+</div>
+
+<div class="HomeBorder">
+<h2> 1. Coca-Cola London Eye </h2>
+<img src="images/london_eye-1.jpg" align="left"; style="margin-right:30px"; style="margin-bottom:30px"; style="width:30%"; height="200px">
+<p> The Coca-Cola London Eye is a major feature of London's skyline.
+      It boasts some of London's best views from its 32 capsules, each weighing 10 tonnes and holding up to 25 people.
+      Climb aboard for a breathtaking experience, with an unforgettable perspective of more than 55 of London's most famous landmarks – all in just 30 minutes!
+  </p>
+  <p>  The Coca-Cola London Eye is centrally located in the heart of the capital, gracefully rotating over the River Thames opposite the Houses of Parliament and Big Ben.
+      An experience on the Coca-Cola London Eye will lift you high enough to see up to 40 kilometres on a clear day and keep you close enough to see the spectacular details of the city unfolding beneath you.
+  </p>
+</div>
+<div class="HomeBorder">
+<h2> 2. SEA LIFE London </h2>
+<img src="images/sealife-detail.jpg" align="left"; style="margin-right:30px"; style="margin-bottom:30px"; style="width:30%"; height="200px" >
+<p> The new SEA LIFE London Aquarium is home to one of Europe’s largest collections of global marine life and the jewel in the crown of the 28 SEA LIFE attractions in the UK and Europe.
+  Situated in the heart of London, the experience takes visitors on an immersive and interactive journey along the Great Oceanic Conveyor.
+</p>
+<p>  As well as allowing millions of people to discover the marvels of the marine world, the SEA LIFE network has an important role to play in helping safeguard our seas and their inhabitants for the future.
+   The SEA LIFE London Aquarium provides the UK with a leading centre of excellence on marine management, conservation, preservation and education in the heart of the capital.
+</p>
+</div>
+
+<div class="HomeBorder">
+  <h2> 3. Warner Bros. Studio Tour </h2>
+  <img src="images/warner-bros-studio-tour-london-the-making-of-harry-potter-warner-bros-studio-tour-london-hogwarts-expressweb-8bda679e9fcb25322ddbae65bb6d49dc.jpg" align="left"; style="margin-right:30px"; style="margin-bottom:30px"; style="width:30%"; height="200px" >
+  <p> Warner Bros. Studio Tour London provides an amazing new opportunity to explore the magic of the Harry Potter™ films – the most successful film series of all time.
+  This unique walking tour takes you behind-the-scenes and showcases a huge array of beautiful sets, costumes and props.
+  It also reveals some closely guarded secrets, including facts about the special effects and animatronics that made these films so hugely popular all over the world.
+  </p>
+  <p> Step inside and discover the actual Great Hall; Explore Dumbledore’s office and discover never-before-seen treasures;
+      See iconic props from the films, including Harry’s Nimbus 2000 and Hagrid’s motorcycle;
+      Learn how creatures were brought to life with green screen effects, animatronics and life-sized models.
+  </p>
+</div>
+<div class="HomeBorder">
+<h2> 4. Madame Tussauds London</h2>
+<img src="images/maxresdefault.jpg" align="left"; style="margin-right:30px"; style="margin-bottom:30px"; style="width:30%"; height="200px" >
+<p> With 14 interactive areas, Madame Tussauds London combines glitz, glamour and incredible history with more than 300 stunning wax figures.</p>
+<p> Walk down the red carpet and strike a pose with Benedict Cumberbatch and Johnny Depp, before exploring our sports zone with Usain Bolt and David Beckham.
+    Enoy a once-in-a-lifetime audience with Her Majesty The Queen and The Duke and Duchess of Cambridge before stepping on stage with music icons, including Miley Cyrus.
+    Then, after a behind-the-scenes look at how sculptors create the figures, ride in a taxi and relive the rich history of London.
+    Next, step up to your favourite Marvel Super Heroes and immerse yourself in the Marvel Super Heroes 4D movie, before meeting heroes and villains from Star Wars Episodes I – VI.
+</p>
+</div>
+<div class="HomeBorder">
+<h2> 5. Tower of London</h2>
+<img src="images/London_TowerGetty-1500x792.jpg" align="left"; style="margin-right:30px"; style="margin-bottom:30px"; style="width:25%"; height="200px" >
+<p>
+  Despite the Tower of London's grim reputation as a place of torture and death, within these walls you will also discover the history of a royal palace, an armoury and a powerful fortress.
+  Don't miss Royal Beasts and learn about the wild and wonderous animals that have inhabited the Tower, making it the first London Zoo.
+  <p>Discover the priceless Crown Jewels, join an iconic Beefeater on a tour and hear their bloody tales, stand where famous heads have rolled, learn the legend of the Tower's ravens, storm the battlements, get to grips with swords and armour, and much more!
+ This content has been supplied by HM Tower of London
+</p>
+
+</p>
+</div>
+
+
+<div id="respond">
+
+  <h4>Leave a Comment</h4>
+
+  <form action="Home.html" method="post" id="commentform">
+
+    <label for="comment_author" class="required">Name:</label>
+    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+    <label for="email" class="required">Email-ID:</label>
+    <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+
+    <label for="comment" class="required">Your Message:</label>
+    <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+
+    <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+    <input name="submit" type="submit" value="Submit comment" />
+
+  </form>
+
+</div>
+
+</body>
+</html>
